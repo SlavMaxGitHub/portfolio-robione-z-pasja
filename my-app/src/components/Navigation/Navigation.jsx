@@ -22,9 +22,11 @@ const Navigation = () => {
     </li>
   ));
   return (
-    <nav className="navigation">
-      <ul className="navigation__list">{menu}</ul>
-    </nav>
+    <header className="header">
+      <nav className="navigation">
+        <ul className="navigation__list">{menu}</ul>
+      </nav>
+    </header>
   );
 };
 

@@ -4,8 +4,8 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer>
-      <h3>&copy; robione z pasją 2022</h3>
+    <footer className="footer">
+      <h4 className="footer-copy">&copy; robione z pasją 2022</h4>
     </footer>
   );
 };
