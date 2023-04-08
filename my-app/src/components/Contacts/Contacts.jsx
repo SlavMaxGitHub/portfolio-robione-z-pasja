@@ -5,7 +5,9 @@ const Contacts = () => {
   return (
     <>
       <h1>Kontakt</h1>
-      <ContactsForm />
+      <div className="formContact">
+        <ContactsForm />
+      </div>
     </>
   );
 };
