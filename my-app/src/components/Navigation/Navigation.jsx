@@ -6,7 +6,8 @@ import "./Navigation.scss";
 const list = [
   { name: "home", path: "/", exact: true },
   { name: "zdjęcia", path: "/photos" },
-  { name: "grafika", path: "/graphics" }
+  { name: "grafika", path: "/graphics" },
+  { name: "kontakt", path: "/contacts" }
 ];
 
 const Navigation = () => {

@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./Home.scss";
+import logo from "../../images/logo.png";
+
 let textAbout =
   "Cześć, jestem Gosia! Ukończyłam roczny kurs na kierunku Grafika Komputerowa w TEB Edukacja uzyskując ocenę bardzo dobry. Posiadam certyfikaty ze znajomści praktycznej programów Adobe Photoshop, Adobe InDesign oraz Adobe Ilustrator. Moją pasją jest fotografia. Najbardziej lubię robić zdjęcia portretowe oraz fotografie makro.";
 
@@ -9,7 +11,7 @@ const Home = () => {
     <div className="wrapper">
       <div className="home home__about">
         <img
-          src="../../../public/assets/images/logo.png"
+          src={logo}
           alt="logo aparatu fotograficznego z motylem"
           className="home__about-img"
         />

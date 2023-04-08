@@ -8,36 +8,44 @@ module.exports = {
   entry: "./js/index.js",
   output: {
     path: path.resolve(__dirname, "../", "dist"),
-    filename: "[name].bundle.js",
+    filename: "[name].bundle.js"
   },
 
   devServer: {
     open: true,
     static: {
-      directory: path.join(__dirname, "../", "dist"),
+      directory: path.join(__dirname, "../", "dist")
     },
     port: 5001,
     compress: true,
-    hot: true,
+    hot: true
   },
 
   module: {
     rules: [
       {
         test: /\.txt$/,
-        use: "raw-loader",
+        use: "raw-loader"
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader"]
       },
       {
         test: /\.(sass|scss)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.(jpg|png|svg|gif|jpeg)$/,
-        use: "file-loader",
+        use: "file-loader"
+      },
+      {
+        rules: [
+          {
+            test: /\.(jpe?g|png|gif|svg)$/i,
+            use: ["url-loader?limit=10000", "img-loader"]
+          }
+        ]
       },
       {
         test: /\.js$/,
@@ -45,19 +53,19 @@ module.exports = {
         exclude: /node_modules/,
         options: {
           presets: [
-            ["@babel/preset-env", { useBuiltIns: "usage", corejs: "2.0.0" }],
+            ["@babel/preset-env", { useBuiltIns: "usage", corejs: "2.0.0" }]
           ],
-          plugins: ["@babel/plugin-proposal-class-properties"],
-        },
-      },
-    ],
+          plugins: ["@babel/plugin-proposal-class-properties"]
+        }
+      }
+    ]
   },
 
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "index.html",
-      title: "robione z pasją- portfolio",
-    }),
-  ],
+      title: "robione z pasją- portfolio"
+    })
+  ]
 };

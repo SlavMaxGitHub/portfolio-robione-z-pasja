@@ -8,12 +8,19 @@
   justify-content: space-between;
   .home {
     flex-basis: 30%;
-
     min-height: 100%;
-    background-color: bisque;
   }
 
   .home__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-img {
+      width: 80%;
+      height: auto;
+    }
+
     &-text {
       font-size: 1.2rem;
       padding: 1.5rem;
@@ -24,14 +31,14 @@
   }
 
   .home__photo {
-    background-image: url(../../../public/assets/images/flower.jpg);
+    background-image: url(../../images/flower.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .home__graph {
-    background-image: url(../../../public/assets/images/wolf.jpg);
+    background-image: url(../../images/wolf.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
