@@ -9,6 +9,27 @@
   .home {
     flex-basis: 30%;
     min-height: 100%;
+
+    &--link {
+      display: block;
+      text-align: center;
+      padding-top: 50%;
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: bold;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.5s;
+      background-color: rgba(255, 192, 203, 0.5);
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 
   .home__about {
@@ -16,6 +37,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     &-img {
       width: 80%;
       height: auto;

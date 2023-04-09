@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./Home.scss";
 import logo from "../../images/logo.png";
 
@@ -17,8 +19,16 @@ const Home = () => {
         />
         <p className="home__about-text">{textAbout}</p>
       </div>
-      <div className="home home__photo"></div>
-      <div className="home home__graph"></div>
+      <div className="home home__photo">
+        <Link className="home--link" to="/photos">
+          zdjęcia
+        </Link>
+      </div>
+      <div className="home home__graph">
+        <Link className="home--link" to="/graphics">
+          grafika{" "}
+        </Link>
+      </div>
     </div>
   );
 };
