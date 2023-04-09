@@ -1,7 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import "./Navigation.scss";
+import logo from "../../images/logo72ppi.jpg";
 
 const list = [
   { name: "home", path: "/", exact: true },
@@ -25,6 +26,13 @@ const Navigation = () => {
   return (
     <header className="header">
       <nav className="navigation">
+        <Link to="/">
+          <img
+            className="navigation-logo"
+            src={logo}
+            alt="logo robione z pasją"
+          />
+        </Link>
         <ul className="navigation__list">{menu}</ul>
       </nav>
     </header>

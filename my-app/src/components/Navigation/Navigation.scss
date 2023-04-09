@@ -1,12 +1,21 @@
 .active {
   border-bottom: 1px solid rgb(252, 81, 178);
 }
+
 .navigation {
-  width: 100%;
+  width: 100vw;
   height: 5rem;
   background-color: pink;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+
+  &-logo {
+    width: auto;
+    height: 80%;
+    border-radius: 30%;
+    padding: 0.5rem 0;
+    margin-left: 5rem;
+  }
 
   &__list {
     align-items: center;
