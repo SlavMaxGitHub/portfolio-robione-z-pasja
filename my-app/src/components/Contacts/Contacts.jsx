@@ -32,7 +32,7 @@ const Contacts = () => {
             ></i>
             @ robione.z.pasja
           </a>
-
+          <br />
           <a
             className="contact-link"
             href="https://www.google.com/maps/place/%C5%9Awidnica/@50.8407062,16.4576068,13z/data=!3m1!4b1!4m6!3m5!1s0x470e4d36a731e551:0x7c72a14dac6c836e!8m2!3d50.8498434!4d16.475679!16zL20vMDE0MV9z"
