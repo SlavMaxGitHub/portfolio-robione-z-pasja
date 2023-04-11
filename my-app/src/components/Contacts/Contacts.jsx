@@ -17,7 +17,7 @@ const Contacts = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa-regular fa-at" style={{ color: "#d63384" }}></i>
+            <i className="fa-regular fa-at" style={{ color: "#d63384" }}></i>
             zpasjarobione@gmail.com
           </a>
           <a
@@ -26,8 +26,11 @@ const Contacts = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa-brands fa-instagram" style={{ color: "#d63384" }}></i>@
-            robione.z.pasja
+            <i
+              className="fa-brands fa-instagram"
+              style={{ color: "#d63384" }}
+            ></i>
+            @ robione.z.pasja
           </a>
 
           <a
@@ -37,7 +40,7 @@ const Contacts = () => {
             rel="noopener noreferrer"
           >
             <i
-              class="fa-solid fa-location-dot"
+              className="fa-solid fa-location-dot"
               style={{ color: "#d63384" }}
             ></i>
             Świdnica
