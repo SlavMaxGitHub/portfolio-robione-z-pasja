@@ -1,1 +1,35 @@
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100vw - 10rem);
+  margin: 0 auto;
+  padding-top: 5rem;
 
+  .contact {
+    flex-basis: 30%;
+    &-title {
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    &-link {
+      display: block;
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+      padding: 1rem 0;
+      transition: 0.5s;
+
+      &:hover {
+        color: pink;
+        padding-left: 1rem;
+      }
+      & i {
+        margin-right: 1rem;
+      }
+    }
+  }
+  .formContact {
+    flex-basis: 60%;
+  }
+}

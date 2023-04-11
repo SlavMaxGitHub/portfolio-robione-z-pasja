@@ -2,7 +2,8 @@
   min-height: 70vh;
   width: calc(100% - 11rem);
 
-  margin: 5rem auto;
+  margin: 0 auto;
+  padding-top: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,13 +57,11 @@
     background-image: url(../../images/flower.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
   }
 
   .home__graph {
     background-image: url(../../images/wolf.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
   }
 }
