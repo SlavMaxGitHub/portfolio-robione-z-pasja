@@ -4,7 +4,7 @@
 
 .navigation {
   width: 100vw;
-  height: 5rem;
+  height: 80px;
   background-color: pink;
   display: flex;
   justify-content: space-between;
@@ -13,25 +13,25 @@
     width: auto;
     height: 80%;
     border-radius: 30%;
-    padding: 0.5rem 0;
-    margin-left: 5rem;
+    padding: 8px 0;
+    margin-left: 80px;
   }
 
   &__list {
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-right: 5rem;
+    margin-right: 80px;
     list-style: none;
 
     &-element {
-      padding-left: 2rem;
+      padding-left: 30px;
 
       & a {
         display: inline-block;
         text-decoration: none;
         font-variant: small-caps;
-        font-size: 1.5rem;
+        font-size: 26px;
         color: white;
         transition: 0.3s linear;
 

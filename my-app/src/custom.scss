@@ -2,7 +2,7 @@ $theme-colors: (
   "primary": #d63384
 );
 
-$input-focus-box-shadow: 0 0 0.5rem #d63384;
+$input-focus-box-shadow: 0 0 10px #d63384;
 $input-focus-border-color: #d63384;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
