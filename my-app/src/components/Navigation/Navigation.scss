@@ -8,15 +8,19 @@
   background-color: pink;
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   &-logo {
     width: auto;
-    height: 80%;
+    height: 70%;
     border-radius: 30%;
-    padding: 8px 0;
-    margin-left: 80px;
-  }
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
 
+    // margin-left: 80px;
+  }
   &__list {
     align-items: center;
     display: flex;
