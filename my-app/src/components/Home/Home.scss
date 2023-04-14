@@ -1,6 +1,6 @@
 .wrapper {
   min-height: 70vh;
-  width: calc(100vw - 160px);
+  width: calc(100% - 160px);
   max-width: 1800px;
   margin: 0 auto;
   padding-top: 80px;
@@ -9,7 +9,7 @@
   justify-content: space-between;
   .home {
     flex-basis: 30%;
-    min-height: 100%;
+    height: auto;
 
     &--link {
       display: block;

@@ -3,7 +3,7 @@
 }
 
 .navigation {
-  width: 100vw;
+  width: 100%;
   height: 80px;
   background-color: pink;
   display: flex;
@@ -18,9 +18,8 @@
     top: 50%;
     left: 80px;
     transform: translateY(-50%);
-
-    // margin-left: 80px;
   }
+
   &__list {
     align-items: center;
     display: flex;
@@ -44,5 +43,16 @@
         }
       }
     }
+  }
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  bottom: 3vw;
+  right: 5%;
+  font-size: 8vw;
+  &:hover {
+    cursor: pointer;
   }
 }

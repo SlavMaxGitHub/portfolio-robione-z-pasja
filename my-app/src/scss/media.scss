@@ -1,0 +1,363 @@
+$breakpoints: (
+  large: 1360px,
+  standard: 1246px,
+  medium: 1060px,
+  medium-small: 720px,
+  small: 520px,
+  x-small: 360px
+);
+
+@media screen and (max-width: map-get($breakpoints, large)) {
+  .wrapper {
+    .home {
+      &--link {
+        padding-top: 70%;
+        font-size: 28px;
+      }
+    }
+
+    .home__about {
+      &-text {
+        font-size: 18px;
+        padding: 20px;
+        text-indent: 20px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, standard)) {
+  .wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+    .home {
+      flex-basis: 45%;
+      column-gap: 20px;
+      min-height: 70vh;
+      &--link {
+        padding-top: 50%;
+      }
+    }
+    .home__about {
+      margin: 0 auto;
+      flex-basis: 60%;
+      margin-bottom: 80px;
+      &-text {
+        font-size: 20px;
+        line-height: 28px;
+      }
+      &-img {
+        width: 60%;
+        height: auto;
+      }
+    }
+  }
+  .contact-wrapper {
+    .contact {
+      &-link {
+        font-size: 20px;
+        padding: 10px 0;
+        &:hover {
+          color: pink;
+          padding-left: 6px;
+        }
+        & i {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, medium)) {
+  .header {
+    .navigation {
+      position: fixed;
+      min-height: 70vh;
+      justify-content: center;
+      z-index: 10;
+      transform: translateY(-85%);
+      transition: 0.3s linear;
+
+      &-logo {
+        width: 60px;
+        height: auto;
+        top: calc(100% - 50px);
+        left: 5%;
+      }
+
+      &__list {
+        flex-direction: column;
+        margin: 60px 0 80px 0;
+        padding: 0;
+        justify-content: space-around;
+
+        &-element {
+          padding: 0;
+
+          & a {
+            display: block;
+            font-size: 46px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: white;
+          }
+        }
+      }
+    }
+    .navDown {
+      transform: translateY(0);
+    }
+    .burger {
+      display: block;
+      bottom: 30px;
+      right: 5%;
+      font-size: 40px;
+    }
+  }
+
+  .wrapper {
+    justify-content: center;
+    .home {
+      flex-basis: 80%;
+      &--link {
+        font-size: 40px;
+        background-color: transparent;
+        opacity: 1;
+      }
+
+      &__photo,
+      &__graph {
+        margin-top: 120px;
+      }
+    }
+    .home__about {
+      margin: 80px 0;
+      &-text {
+        font-size: 30px;
+        line-height: 150%;
+      }
+      &-img {
+        width: 80%;
+      }
+    }
+  }
+  .galleryWrapper {
+    max-width: none;
+    width: 95%;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    .gallery__carousel {
+      max-width: none;
+      width: 100%;
+      margin: 0;
+
+      &-item {
+        height: 70vh;
+      }
+    }
+  }
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    row-gap: 60px;
+    margin: 0 auto;
+    padding-top: 60px;
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 100px;
+
+      &-title {
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+      }
+      &-link {
+        font-size: 30px;
+
+        & i {
+          margin-right: 20px;
+        }
+      }
+    }
+    .formContact {
+      width: 70%;
+      text-align: center;
+      .form {
+        font-size: 22px;
+        &-title {
+          font-size: 32px;
+        }
+        .input {
+          font-size: 26px;
+        }
+        .formButton {
+          margin: 30px 0;
+          scale: 1.4;
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, medium-small)) {
+  .wrapper {
+    width: 95%;
+    .home {
+      flex-basis: 100%;
+    }
+    .home__about {
+      &-text {
+        font-size: 26px;
+      }
+      &-img {
+        width: 70%;
+      }
+    }
+  }
+  .contact-wrapper {
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      &-title {
+        margin-bottom: 40px;
+      }
+      &-link {
+        font-size: 26px;
+      }
+    }
+    .formContact {
+      width: 90%;
+      .form {
+        font-size: 20px;
+        &-title {
+          font-size: 32px;
+        }
+        .input {
+          font-size: 22px;
+        }
+        .formButton {
+          margin: 25px 0;
+        }
+      }
+    }
+  }
+  .error {
+    width: 80vw;
+    height: 80vw;
+
+    &-title {
+      font-size: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, small)) {
+  .header {
+    .navigation {
+      &__list {
+        margin: 20px 0 100px 0;
+
+        &-element {
+          & a {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+  .wrapper {
+    width: 95%;
+    .home__about {
+      &-text {
+        font-size: 22px;
+        padding: 18px;
+        text-indent: 20px;
+        line-height: 150%;
+      }
+    }
+  }
+  .contact-wrapper {
+    .contact {
+      &-link {
+        display: inline-block;
+        font-size: 28px;
+        padding: 20px 0;
+
+        & i {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, x-small)) {
+  .header {
+    .navigation {
+      &-logo {
+        width: 50px;
+        top: calc(100% - 10vw);
+      }
+
+      &__list {
+        &-element {
+          & a {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .burger {
+    display: none;
+    position: absolute;
+    bottom: 4vw;
+    right: 5%;
+    font-size: 40px;
+  }
+  .contact-wrapper {
+    width: 95%;
+    .contact {
+      margin-top: 60px;
+      &-title {
+        margin-bottom: 40px;
+      }
+      &-link {
+        font-size: 22px;
+        padding: 20px 0;
+      }
+    }
+  }
+  .error {
+    &-title {
+      font-size: 24px;
+    }
+
+    &-link {
+      font-size: 16px;
+    }
+  }
+}

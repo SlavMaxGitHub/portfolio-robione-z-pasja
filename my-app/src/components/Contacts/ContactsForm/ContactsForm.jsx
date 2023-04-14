@@ -33,23 +33,25 @@ const ContactsForm = () => {
 
   return (
     <Form id="myForm" ref={form} onSubmit={sendEmail} className="form">
-      <h4>Napisz do mnie</h4>
+      <h4 className="form-title">Napisz do mnie</h4>
       <br />
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>Twój e-mail :</Form.Label>
-        <Form.Control type="email" name="email" />
+        <Form.Control className="input" type="email" name="email" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>Twoje imię : </Form.Label>
-        <Form.Control type="text" name="name" />
+        <Form.Control className="input" type="text" name="name" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
         <Form.Label>Twoja wiadomość : </Form.Label>
-        <Form.Control name="message" as="textarea" rows={3} />
+        <Form.Control className="input" name="message" as="textarea" rows={3} />
       </Form.Group>
-      <Button type="submit">Wyślij</Button>
+      <Button className="formButton" type="submit">
+        Wyślij
+      </Button>
     </Form>
   );
 };

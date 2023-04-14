@@ -30,7 +30,7 @@ const Contacts = () => {
               className="fa-brands fa-instagram"
               style={{ color: "#d63384" }}
             ></i>
-            @ robione.z.pasja
+            @robione.z.pasja
           </a>
           <br />
           <a

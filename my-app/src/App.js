@@ -6,6 +6,7 @@ import Page from "./components/Pages/Page";
 import Footer from "./components/Footer/Footer";
 
 import "./App.scss";
+import "./scss/media.scss";
 
 function App() {
   return (
