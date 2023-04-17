@@ -330,14 +330,15 @@ $breakpoints: (
         }
       }
     }
+    .burger {
+      display: block;
+      position: absolute;
+      bottom: 4vw;
+      right: 5%;
+      font-size: 40px;
+    }
   }
-  .burger {
-    display: none;
-    position: absolute;
-    bottom: 4vw;
-    right: 5%;
-    font-size: 40px;
-  }
+
   .contact-wrapper {
     width: 95%;
     .contact {
